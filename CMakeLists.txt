@@ -10,4 +10,4 @@ Module00/ex01/Contact.class.cpp Module00/ex01/main.cpp Module01/ex00/Pony.hpp
         Module01/ex05/Human.hpp Module01/ex05/Human.cpp Module01/ex05/Brain.cpp
         Module01/ex05/main.cpp Module01/ex06/HumanB.hpp Module01/ex06/HumanB.cpp
         Module01/ex06/HumanA.hpp Module01/ex06/HumanA.cpp Module01/ex06/main.cpp
-        Module01/ex06/Weapon.hpp Module01/ex06/Weapon.cpp Module01/ex07/main.cpp Module01/ex07/replace.hpp)
+        Module01/ex06/Weapon.hpp Module01/ex06/Weapon.cpp Module01/ex07/main.cpp Module01/ex07/replace.hpp Module02/ex00/Fixed.cpp Module02/ex00/Fixed.hpp Module02/ex00/main.cpp)

@@ -1,23 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   Fixed.hpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ztawanna <ztawanna@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/03/23 01:08:58 by ztawanna          #+#    #+#             */
-/*   Updated: 2021/03/23 01:08:58 by ztawanna         ###   ########.fr       */
+/*   Created: 2021/03/24 19:36:28 by ztawanna          #+#    #+#             */
+/*   Updated: 2021/03/24 19:36:28 by ztawanna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-# include "ZombieHorde.hpp"
+#ifndef FIXED_HPP
+#define FIXED_HPP
 
-int main(void)
+#include <iostream>
+
+class Fixed
 {
-	ZombieHorde	horde(6);
-	ZombieHorde horde_two(-5);
-	horde.announce();
-	horde_two.announce();
+public:
+	Fixed();
+	~Fixed();
+	Fixed(const Fixed &copy);
+	Fixed&              operator=(const Fixed &op);
+	int                 getRawBits() const;
+	void                setRawBits(int const);
 
-	return (0);
-}
+private:
+	int                 _fixedPointValue;
+	static const int    _Bits;
+};
+#endif //CPP_FIXED_HPP
