@@ -15,22 +15,20 @@
 int main()
 {
 	FragTrap Clap("Claptrap");
-	FragTrap Flap("iNAC");
+	FragTrap Flap("Fraggy");
 
 	srand(time(NULL));
 	std::cout << std::endl;
-	Clap.meleeAttack("iNac");
+	Clap.meleeAttack("Fraggy");
 	Flap.takeDamage(30);
-	Clap.vaulthunter_dot_exe("iNac");
+	Clap.vaulthunter_dot_exe("Fraggy");
 	Flap.takeDamage(35);
 	Flap.rangedAttack("Claptrap");
 	Clap.takeDamage(20);
 	Flap.vaulthunter_dot_exe("Claptrap");
 	Clap.takeDamage(35);
-	Flap.vaulthunter_dot_exe("Claptrap");
-	Clap.takeDamage(35);
 	Clap.beRepaired(40);
-	Clap.rangedAttack("iNac");
+	Clap.rangedAttack("Fraggy");
 	Flap.takeDamage(20);
 	std::cout << std::endl;
 }
