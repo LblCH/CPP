@@ -14,7 +14,7 @@
 
 FragTrap::FragTrap()
 {
-	std::cout << "It's a FR4G-TP " << this->_name << " !" << std::endl;
+	std::cout << "It's a FR4G-TP <" << this->_name << "> !" << std::endl;
 }
 
 FragTrap::FragTrap(std::string name)
@@ -28,7 +28,7 @@ FragTrap::FragTrap(std::string name)
 		this->_meleeAttackDamage = 30;
 		this->_rangedAttackDamage = 20;
 		this->_armorDamageReduction = 5;
-	std::cout << "New FR4G-TP " << this->_name << " comes to arena." << std::endl;
+	std::cout << "New FR4G-TP <" << this->_name << "> comes to arena." << std::endl;
 }
 
 FragTrap::FragTrap(const FragTrap& copy)
@@ -39,7 +39,7 @@ FragTrap::FragTrap(const FragTrap& copy)
 
 FragTrap::~FragTrap()
 {
-	std::cout << "FR4G-TP " << this->_name << " destroyed." << std::endl;
+	std::cout << "FR4G-TP <" << this->_name << "> destroyed." << std::endl;
 }
 
 FragTrap &FragTrap::operator=(const FragTrap& copy)

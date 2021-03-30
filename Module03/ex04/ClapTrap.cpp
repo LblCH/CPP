@@ -14,7 +14,7 @@
 
 ClapTrap::ClapTrap()
 {
-	std::cout << "<System>: New robot " << this->_name << " comes to arena." << std::endl;
+	std::cout << "<System>: New robot <" << this->_name << "> comes to arena." << std::endl;
 }
 
 ClapTrap::ClapTrap(std::string name)
@@ -29,7 +29,7 @@ ClapTrap::ClapTrap(std::string name)
 		_rangedAttackDamage(15),
 		_armorDamageReduction(3)
 {
-	std::cout << "<System>: New robot " << this->_name << " comes to arena." << std::endl;
+	std::cout << "<System>: New robot <" << this->_name << "> comes to arena." << std::endl;
 }
 
 ClapTrap::ClapTrap(const ClapTrap& copy)
@@ -40,7 +40,7 @@ ClapTrap::ClapTrap(const ClapTrap& copy)
 
 ClapTrap::~ClapTrap()
 {
-	std::cout << "<System>: " + this->_name + " destroyed." << std::endl;
+	std::cout << "<System>: <" + this->_name + "> destroyed." << std::endl;
 }
 
 ClapTrap &ClapTrap::operator=(const ClapTrap& copy)

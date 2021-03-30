@@ -13,6 +13,7 @@
 #include "FragTrap.hpp"
 #include "ScavTrap.hpp"
 #include "NinjaTrap.hpp"
+#include "SuperTrap.hpp"
 
 int main()
 {
@@ -58,6 +59,20 @@ int main()
 	iNAC.meleeAttack("Fraggy");
 	Flap.takeDamage(60);
 
+	std::cout << std::endl;
+	SuperTrap Super("SUP-TP");
+	Super.meleeAttack("Claptrap");
+	Clap.takeDamage(60);
+	Super.rangedAttack("Claptrap");
+	Clap.takeDamage(20);
+	Super.ninjaShoebox(iNAC);
+	Super.vaulthunter_dot_exe("Claptrap");
+	Clap.takeDamage(35);
+	Super.takeDamage(80);
+	Super.beRepaired(40);
+	SuperTrap Sup2("SUP2-TP");
+	Super = Sup2;
+	Super.takeDamage(40);
 	std::cout << std::endl;
 }
 

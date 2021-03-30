@@ -13,13 +13,13 @@
 #include "SuperTrap.hpp"
 
 SuperTrap::SuperTrap():
-	ClapTrap(name), NinjaTrap(name), FragTrap(name)
+	ClapTrap(), FragTrap(), NinjaTrap()
 {
-	std::cout << "New 9JA-TP <" << this->_name << "> comes to arena." << std::endl;
+	std::cout << "Its a SUPR-TP <" << this->_name << "> comes to arena!" << std::endl;
 }
 
 SuperTrap::SuperTrap(std::string name):
-	ClapTrap(name), NinjaTrap(name), FragTrap(name)
+	ClapTrap(name), FragTrap(name), NinjaTrap(name)
 {
 	this->_hitPoints = 100;
 	this->_maxHitPoints = 100;
@@ -28,14 +28,14 @@ SuperTrap::SuperTrap(std::string name):
 	this->_level = 1;
 	this->_name = name;
 	this->_meleeAttackDamage = 60;
-	this->_rangedAttackDamage = 5;
-	this->_armorDamageReduction = 0;
-	std::cout << "New 9JA-TP <" << this->_name << "> comes to arena." << std::endl;
+	this->_rangedAttackDamage = 20;
+	this->_armorDamageReduction = 5;
+	std::cout << "New SUPR-TP <" << this->_name << "> comes to arena." << std::endl;
 }
 
 SuperTrap::SuperTrap(const SuperTrap& copy)
 {
-	std::cout << "9-JA-TP cloned" << std::endl;
+	std::cout << "SUPR-TP cloned" << std::endl;
 	*this = copy;
 }
 
@@ -57,7 +57,7 @@ SuperTrap &SuperTrap::operator=(const SuperTrap& copy)
 
 SuperTrap::~SuperTrap()
 {
-	std::cout << "9JA-TP <" << this->_name << "> destroyed." << std::endl;
+	std::cout << "SUPR-TP <" << this->_name << "> destroyed." << std::endl;
 }
 
 void SuperTrap::meleeAttack(std::string const &target)
