@@ -29,5 +29,7 @@ int main()
 	}
 	std::cout << *john;
 	std::cout << *jim;
+	delete john;
+	delete jim;
 }
 
