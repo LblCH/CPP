@@ -1,6 +1,7 @@
 # include "ShrubberyCreationForm.hpp"
 # include "RobotomyRequestForm.hpp"
 # include "PresidentialPardonForm.hpp"
+#include "Intern.hpp"
 
 static void testForm(Bureaucrat* bur, Form* form)
 {
@@ -96,5 +97,25 @@ int main()
 	delete bob;
 	delete james;
 	delete meg;
+	std::cout << std::endl;
+
+	Form *f1;
+	Form *f2;
+	Form *f3;
+	Form *f4;
+	Intern i1;
+	Bureaucrat b1 = Bureaucrat("Bob", 42);
+
+	f1 = i1.makeForm("robotomy request", "Marvin");
+	f2 = i1.makeForm("presidential pardon", "Marvin");
+	f3 = i1.makeForm("shrubbery creation", "Marvin");
+	f4 = i1.makeForm("TEST", "Marvin");
+	std::cout << std::endl;
+	std::cout << *f1 << std::endl;
+	std::cout << *f2 << std::endl;
+	std::cout << *f3 << std::endl;
+
+	b1.signForm(*f1);
+	b1.executeForm(*f1);
 }
 

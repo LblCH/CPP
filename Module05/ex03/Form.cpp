@@ -129,9 +129,9 @@ std::ostream	&operator<<(std::ostream & out, const Form & form)
 	out << "Grade to sign : " << form.getGradeToSign() << std::endl;
 	out << "Grade to execute : " << form.getGradeToExecute() << std::endl;
 	if (!form.getSign())
-		out << std::endl << "--not signed, ";
+		out << "--not signed, ";
 	else
 		out << "--signed, " << std::endl;
-
+	out << std::endl;
 	return (out);
 }
